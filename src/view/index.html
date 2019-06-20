@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.0.min.js"></script>
+    <title>PokeTest</title>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <div id="close">&times;</div>
+        </div>
+        <div class="modal-content">
+            <h3>Ah não... =/</h3>
+            <p>Sinto muito, Treinador...</p>
+                Sei que a vontade de capturar pokemons é enorme, mas nós só os encontraremos em lugares que
+                existem!!!</p>
+            <button id="btn_modal">Volte a caçar</button>
+        </div>
+    </div><!-- final do modaL -->
+
+    <div class="container">
+
+        <div class="topo">
+            <span class="titulo">E ai? Vamos caçar?</span>
+            <form onsubmit="buscarPoke(event)">
+                <div class="buscar">
+                    <input class="campo" type="text" required name="text" name="buscar" id="buscar"
+                        placeholder="Onde iremos caçar?" autocomplete="off" autofocus>
+                    <input onclick="buscarPoke(event)" class="btn" type="submit" value=" " id="search">
+                    <input onclick="buscarPoke(event)" class="btn-2" type="submit" value="Pesquisar" id="search2">
+                </div>
+            </form>
+        </div><!-- final do topo -->
+
+
+        <div class="resultado" id="carregando">
+
+            <div class="resultado_descricao">
+                <div class="jump">
+                    Voce está caçando em: <span id="cidade"></span>
+                </div>
+                <div class="jump">
+                    Esse é nosso clima atual: <span id="clima"></span> e faz: <span id="graus"></span>
+                </div>
+                <div class="jump">
+                    Aqui voce encontrará Pokemons do tipo: <span id="tipo"></span>
+                </div>
+                    Olha só quem você pode encontrar!!
+                
+            </div><!-- final da descrição -->
+
+            <div class="resultado_icones">
+                <div class="pokemon_icon">
+                    <span id="pokemon0"></span>
+                    <img src="" alt="">
+                    <img id="pokeimg0" src="" alt="">
+                </div>
+                <div class="pokemon_icon">
+                    <span id="pokemon1"></span>
+                    <img id="pokeimg1" src="" alt="">
+                </div>
+                <div class="pokemon_icon">
+                    <span id="pokemon2"></span>
+                    <img id="pokeimg2" src="" alt="">
+                </div>
+                <div class="pokemon_icon">
+                    <span id="pokemon3"></span>
+                    <img id="pokeimg3" src="" alt="">
+                </div>
+            </div><!-- final do resultado icones -->
+
+        </div>
+
+        <div class="carregando">
+            <span>Carregando...</span>
+        </div>
+
+    </div>
+
+    <script src="client.js"></script>
+
+</body>
+
+</html>

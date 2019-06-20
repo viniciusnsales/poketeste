@@ -1,0 +1,27 @@
+{
+  "name": "weather-pokemon-test",
+  "version": "1.0.0",
+  "description": "- O desafio a seguir é o dia-a-dia que qualquer desenvolvedor irá enfrentar no time de produtos da ADTSys;\r - Leia todo o conteúdo antes de iniciar e busque entender de fato o desafio proposto;\r - Utilize as tecnologias de sua preferência: linguagem de programação, frameworks, etc;\r - Não se trata de um desafio complexo, apesar da leitura ser extensa;\r - O desafio baseia-se em consumir 2 APIs de diferentes fontes de dados com intuito de agregar as informações e solucionar o problema de acordo com o que foi proposto;\r - Não completar o desafio não será critério para desclassificação, iremos analisar como a proposta do desafio foi elaborada e não somente o resultado;\r - Quaisquer dúvidas sobre o desafio ou dúvidas técnicas fique a vontade para nos perguntar pelo e-mail team@cloudhit.io.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --inspect=0.0.0.0 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniciusPii/weather-pokemon-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViniciusPii/weather-pokemon-test/issues"
+  },
+  "homepage": "https://github.com/ViniciusPii/weather-pokemon-test#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.19.0",
+    "superagent": "^5.0.5"
+  }
+}
