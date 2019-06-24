@@ -3,7 +3,7 @@ const model = require('./controller');
 module.exports = function (serverExpress) {
 
     serverExpress.get('/', (req, res) => {
-        res.sendfile(__dirname + '/view/index.html')
+        res.sendfile(__dirname + '/view/index.html');
     });
 
     serverExpress.get('/pokemons/', async (req, res) => {
